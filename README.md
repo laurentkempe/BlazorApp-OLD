@@ -1,5 +1,6 @@
 # BlazorApp
-Experimenting with [Blazor WebAssembly RC](https://devblogs.microsoft.com/aspnet/blazor-webassembly-3-2-0-release-candidate-now-available/)
+
+Experimenting with [Blazor WebAssembly RC](https://devblogs.microsoft.com/aspnet/blazor-webassembly-3-2-0-release-candidate-now-available/), Continuous integration using Github Actions and hosting on Github Pages! See the result on https://laurentkempe.com/BlazorApp/
 
 ![.NET Core](https://github.com/laurentkempe/BlazorApp/workflows/.NET%20Core/badge.svg)
 
