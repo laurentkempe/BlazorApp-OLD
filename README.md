@@ -1,5 +1,5 @@
 # BlazorApp
-Experimenting with Blazor WebAssembly RC
+Experimenting with [Blazor WebAssembly RC](https://devblogs.microsoft.com/aspnet/blazor-webassembly-3-2-0-release-candidate-now-available/)
 
 ## Visual Studio Code
 
