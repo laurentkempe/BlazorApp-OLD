@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "BlazorApp.dll": "sha256-HBZQMFAs4LPzM80t0HqNblo9ApX5oTeBLC3YsqIzJQI=",
+      "BlazorApp.dll": "sha256-fr9u7gyitrERypolH7vOnYhciPC23Qa\/dl6Rpxulp7M=",
       "System.Net.Http.Json.dll": "sha256-+IansbyiPIbBxBPwqKb6GLCNiqhuqeIc5S8yC5s7yF4=",
       "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "mscorlib.dll": "sha256-uaG3AW80GeXVlZrMLb3Q0VZ6jBkzXqzaUAgKgtZbStA=",
