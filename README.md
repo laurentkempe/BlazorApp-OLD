@@ -24,3 +24,25 @@ See the configuration [build.yml](https://github.com/laurentkempe/BlazorApp/blob
 It works!
 
 ![Github Actions build](https://pbs.twimg.com/media/EW6z2RhXYAAgH84?format=jpg&name=large)
+
+## Host on Github Pages
+
+Create a [docs](https://github.com/laurentkempe/BlazorApp/tree/master/docs) folder on your Github repository and set the configuration like this
+
+![Github Pages configuration](https://pbs.twimg.com/media/EW7LHdKXgAEOkL_?format=png&name=medium)
+
+Then locally I ran
+
+> dotnet publish -c Release
+
+and copied the results to the docs folder and followed the blog post, "[Hosting Blazor WebAssembly app on GitHub Pages](https://dev.to/cirio/hosting-blazor-webassembly-app-on-github-pages-137k)"
+
+I've got the following issue
+
+![Blazor integrity issue](https://pbs.twimg.com/media/EW7B4ZjXkAAMaTT?format=png&name=large)
+
+So, I followed the recommendation of @SteveSandersonMS on this [Github issue](https://github.com/dotnet/aspnetcore/issues/19828#issuecomment-601823319), and added
+
+    <BlazorCacheBootResources>false<BlazorCacheBootResources>
+
+Pushed the change to Github and you can see the result here - https://laurentkempe.com/BlazorApp/
