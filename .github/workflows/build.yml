@@ -34,5 +34,5 @@ jobs:
       with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: master
-          FOLDER: BlazorApp/BlazorApp/bin/Release/netstandard2.1/wwwroot
+          FOLDER: BlazorApp/BlazorApp/bin/Release/netstandard2.1/publish/wwwroot
           TARGET_FOLDER: docs
