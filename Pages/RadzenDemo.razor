@@ -1,0 +1,42 @@
+@page "/radzen"
+
+@inject DialogService dialogService
+@inject NotificationService notificationService
+
+<RadzenButton Text="Hi" Click="@ShowSimpleDialog" Icon="account_circle" Style="margin-bottom: 20px; width: 150px" />
+
+<RadzenImage Path="https://farm2.staticflickr.com/1971/31306281378_02b055ccfe_q.jpg"></RadzenImage>
+
+<RadzenButton Text=@($"Show info notification") Style="margin-bottom: 20px; width: 200px"
+            Click="@(args => ShowNotification(new NotificationMessage() { Severity = NotificationSeverity.Info, Summary = "Info Summary", Detail = "Info Detail", Duration = 4000 }))" />
+
+@code {
+
+    protected override void OnInitialized()
+    {
+        dialogService.OnOpen += Open;
+        dialogService.OnClose += Close;
+    }
+
+    void Open(string title, Type type, Dictionary<string, object> parameters, DialogOptions options)
+    {
+        @* events.Add(DateTime.Now, "Dialog opened"); *@
+        StateHasChanged();
+    }
+
+    void Close(dynamic result)
+    {
+        @* events.Add(DateTime.Now, "Dialog closed. Result: " + result); *@
+        StateHasChanged();
+    }
+
+    async Task ShowSimpleDialog() => await dialogService.OpenAsync("Simple Dialog", ds => @<h1>Hello</h1>);
+
+    async Task ShowNotification(NotificationMessage message)
+    {
+        notificationService.Notify(message);
+
+        @* events.Add(DateTime.Now, $"{message.Severity} notification"); *@
+        await InvokeAsync(() => { StateHasChanged(); });
+    }
+}
