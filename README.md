@@ -10,3 +10,7 @@ For sure you need the C# extension, but I guess you already have it, then you ne
 ) and enable it in Visual Code settings of the extension:
 
 ![Enable JavaScript Debugger (Nightly)](https://pbs.twimg.com/media/EW6sUsrXsAAeTT9?format=jpg&name=large)
+
+To hit a break point, you need to launch the app with the two launcher created " .NET Core Launch (Blazor Standalone)" then ".NET Core Debug Blazor Web Assembly in Chrome"
+
+![breakpoint](https://pbs.twimg.com/media/EW6wkrsXQAAcow9?format=jpg&name=large)
